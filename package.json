@@ -1,0 +1,22 @@
+{
+  "name": "project-07-nexter",
+  "version": "1.0.0",
+  "description": "it's a home selling & buying website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salman-Farshe/nexter.git"
+  },
+  "author": "Salman Farshe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salman-Farshe/nexter/issues"
+  },
+  "homepage": "https://github.com/Salman-Farshe/nexter#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
