@@ -1,3 +1,14 @@
 html, body{
     font-family: 'Nunito', 'Josefin Sans', sans-serif;
 }
+
+html{
+    font-size: 1rem; // 16px
+}
+
+body{
+    font-family: 'Munito', sans-serif;
+    font-weight: 300;
+    color: $color-grey-dark-2;
+    line-height: 1.6;
+}
