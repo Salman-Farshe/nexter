@@ -1,0 +1,7 @@
+.sidebar{
+    background-color: darkviolet;
+    /* spanning grid item*/
+    //grid-column: 1 / 2;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1; // for all row. start from 1 at the begining & -1 at the end.
+}

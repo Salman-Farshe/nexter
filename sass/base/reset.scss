@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Nunito:wght@300;400;700&display=swap');
 
+*,
 *::before,
-*::after,
-*{
-    margin: 0;
-    padding: 0;
+*::after{
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
+    overflow-x: hidden;
 }

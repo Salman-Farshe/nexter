@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Nunito:wght@300;400;700&display=swap");
+*,
 *::before,
-*::after,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+*::after {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 html, body {
   font-family: 'Nunito', 'Josefin Sans', sans-serif; }
@@ -17,3 +18,60 @@ body {
   font-weight: 300;
   color: #6D5D4B;
   line-height: 1.6; }
+
+.header {
+  background-color: goldenrod;
+  grid-column: full-start / col-end 6; }
+
+.sidebar {
+  background-color: darkviolet;
+  /* spanning grid item*/
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
+
+.footer {
+  background-color: chartreuse;
+  grid-column: full-start / full-end; }
+
+.realtor {
+  background-color: olive;
+  grid-column: col-start 7 / full-end; }
+
+.feature {
+  background-color: purple;
+  grid-column: center-start / center-end; }
+
+.story__picture {
+  background-color: seagreen;
+  grid-column: full-start / col-end 4; }
+
+.story__content {
+  background-color: tomato;
+  grid-column: col-start 5 / full-end; }
+
+.home {
+  background-color: blue;
+  grid-column: center-start / center-end; }
+
+.gallery {
+  background-color: orangered;
+  grid-column: full-start / full-end; }
+
+.container {
+  min-width: 100vw;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 9rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+  /*
+        naming the grid-column line. naming with grid, it's important. making full blend section
+        minmax() accept 2 values - The minimum & The maximum 
+        min-content - fit the content without overflow
+        max-content - make the columns wide as much as possible, without line break
+    */ }
+  .container > * {
+    padding: 1rem;
+    font-size: 2rem; }

@@ -18,13 +18,20 @@
 @import './layouts/sidebar.scss';
 @import './layouts/form.scss';
 @import './layouts/footer.scss';
+@import './layouts/realtor.scss';
+@import './layouts/feature.scss';
+@import './layouts/story__picture.scss';
+@import './layouts/story__content.scss';
+@import './layouts/home.scss';
+@import './layouts/gallery.scss';
 
 @import './components/button.scss';
 @import './components/carosel.scss';
 @import './components/dropdown.scss';
 
 
-@import './pages/home.scss';
+
+@import './pages/container.scss';
 
 
 @import './themes/theme.scss';
