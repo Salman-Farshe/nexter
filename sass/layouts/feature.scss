@@ -1,5 +1,11 @@
 .feature{
-    background-color: purple;
-
+    // child of a grid. it's a grid item.
     grid-column: center-start / center-end;
+
+    margin: 10rem auto;
+    /* parent of grid container.  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // don't need to specify any row. it's a implicit grid.
+    grid-gap: 3rem;
 }
