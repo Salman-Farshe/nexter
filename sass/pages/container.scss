@@ -13,10 +13,6 @@
                             repeat(8, [col-start] minmax(min-content, 9rem) [col-end] ) 
                             [center-end] minmax(4rem, 1fr) [full-end];
     
-    & > *{
-        padding: 1rem;
-        font-size: 2rem;
-    }
     /*
         naming the grid-column line. naming with grid, it's important. making full blend section
         minmax() accept 2 values - The minimum & The maximum 

@@ -76,6 +76,3 @@ body {
         min-content - fit the content without overflow
         max-content - make the columns wide as much as possible, without line break
     */ }
-  .container > * {
-    padding: 1rem;
-    font-size: 2rem; }
