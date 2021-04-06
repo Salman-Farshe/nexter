@@ -42,7 +42,12 @@ body {
   margin: 10rem auto;
   /* parent of grid container.  */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /*  don't need to any media queries
+        using auto-fit & minmax property
+        simply creates as many tracks as can fit
+        based on width that we defined.
+    */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
   align-items: start; }
   .feature-box {
