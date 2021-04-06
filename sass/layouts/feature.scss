@@ -8,4 +8,33 @@
     grid-template-columns: repeat(3, 1fr);
     // don't need to specify any row. it's a implicit grid.
     grid-gap: 3rem;
+    align-items: start;
+    
+    &-box{
+        
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        
+        grid-row-gap: 0.2rem;
+        grid-column-gap: 0.8rem;
+    }
+
+    &__icon{
+        /* for use color property in svg*/
+        fill: $color-primary;
+        width: 3rem;
+        height: 3rem;
+
+        grid-row: 1 / span 2;
+    }
+
+    &__heading{
+        /* changes heading font-family */
+        font-family: 'Josefin Sans';
+        font-weight: 500;
+    }
+
+    &__text{
+        font-size: 1rem;
+    }
 }
