@@ -41,7 +41,30 @@ body {
   background-color: darkviolet;
   /* spanning grid item*/
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+
+.nav__button {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 2rem;
+  margin-top: 2rem;
+  display: block;
+  position: relative; }
+  .nav__button::before, .nav__button::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 2rem;
+    background-color: #fff; }
+  .nav__button::before {
+    transform: translateY(-0.5rem); }
+  .nav__button::after {
+    transform: translateY(0.4rem); }
 
 .footer {
   background-color: #101d2c;
