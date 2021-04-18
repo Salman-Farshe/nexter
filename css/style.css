@@ -90,7 +90,7 @@ body {
       filter: brightness(70%); }
 
 .sidebar {
-  background-color: darkviolet;
+  background-color: #c69963;
   /* spanning grid item*/
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
