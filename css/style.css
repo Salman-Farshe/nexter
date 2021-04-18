@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Nunito:wght@300;400;700&display=swap");
-.story__button, .home__button {
+.header__button, .story__button, .home__button {
   background-color: #c69963;
   color: #f9f7f6;
   padding: 0.5rem 1.5rem;
@@ -9,7 +9,7 @@
   font-size: 1.3rem;
   text-transform: uppercase;
   cursor: pointer; }
-  .story__button:focus, .home__button:focus, .story__button:hover, .home__button:hover {
+  .header__button:focus, .story__button:focus, .home__button:focus, .header__button:hover, .story__button:hover, .home__button:hover {
     background-color: #B28451;
     color: #fff; }
 
@@ -34,8 +34,60 @@ body {
   line-height: 1.6; }
 
 .header {
-  background-color: goldenrod;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../../image/house-06.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content 3rem 1fr;
+  grid-template-columns: max-content;
+  justify-content: center;
+  grid-row-gap: 1rem;
+  padding: 2rem 5rem; }
+  .header__image {
+    height: 5rem;
+    justify-self: center;
+    align-self: center; }
+  .header__h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'josefin sans';
+    color: #f9f7f6;
+    align-self: end; }
+  .header__h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #f9f7f6;
+    text-transform: uppercase;
+    line-height: 1.5;
+    align-self: start; }
+  .header__button {
+    justify-self: start;
+    align-self: start; }
+  .header__text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #aaa;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1rem;
+    align-items: center; }
+    .header__text::before, .header__text::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #fff; }
+  .header__logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+    justify-items: center;
+    justify-items: end; }
+    .header__logos img {
+      height: 4rem;
+      filter: brightness(70%); }
 
 .sidebar {
   background-color: darkviolet;
