@@ -7,7 +7,7 @@
     box-sizing: border-box;
 
     display: grid;
-    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-rows: 85vh min-content 40vw repeat(3, min-content);
     grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] 
                             minmax(4rem, 1fr) [center-start] 
                             repeat(8, [col-start] minmax(min-content, 9rem) [col-end] ) 
