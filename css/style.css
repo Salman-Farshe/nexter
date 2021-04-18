@@ -188,9 +188,8 @@ body {
     font-size: 1rem; }
 
 .story__picture {
-  background-color: #c69963;
   grid-column: full-start / col-end 4;
-  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5));
+  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url("../../image/house-09.jpg");
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
