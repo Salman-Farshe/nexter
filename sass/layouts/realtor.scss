@@ -1,5 +1,47 @@
 .realtor{
-    background-color: olive;
+    background-color: $color-secondary;
 
     grid-column: col-start 7 / full-end;
+
+    font-family: 'josefin Sans';
+    color: $color-grey-light-1;
+    padding: 1rem;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    grid-row-gap: 2rem;
+
+    &__header{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    &__user{
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        // 5vh means 5% of the viewport height
+        grid-row-gap: 3vh;
+        align-items: center;
+
+        &__img{
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+
+        &__text{
+            margin-top: 1rem;
+            h4{
+                font-size: 1rem;
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
 }
