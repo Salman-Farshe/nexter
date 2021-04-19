@@ -207,6 +207,10 @@ body {
   align-content: center;
   justify-items: center;
   grid-row-gap: 2rem; }
+  @media (max-width: 50em) {
+    .realtor {
+      grid-column: full-start / full-end;
+      padding: 5rem 0rem 6rem; } }
   .realtor__header {
     font-size: 1.3rem;
     text-transform: uppercase; }
@@ -216,6 +220,9 @@ body {
     grid-column-gap: 2rem;
     grid-row-gap: 3vh;
     align-items: center; }
+    @media (max-width: 50em) {
+      .realtor__user {
+        grid-template-columns: repeat(3, min-content max-content); } }
     .realtor__user__img {
       display: block;
       width: 3rem;
