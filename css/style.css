@@ -16,6 +16,8 @@ big desktop 1800px
     900px = 56.25em
     1200px = 75em
     1800px = 112.5em
+
+    800px = 50em
 */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Nunito:wght@300;400;700&display=swap");
 .header__button, .story__button, .home__button {
@@ -72,6 +74,10 @@ body {
   justify-content: center;
   grid-row-gap: 1rem;
   padding: 2rem 5rem; }
+  @media (max-width: 50em) {
+    .header {
+      grid-column: full-start / full-end;
+      padding: 1rem; } }
   .header__image {
     height: 5rem;
     justify-self: center;
@@ -426,3 +432,6 @@ body {
     .container {
       grid-template-rows: 5rem 85vh min-content 40vw repeat(3, min-content);
       grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 9rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end]; } }
+  @media (max-width: 50em) {
+    .container {
+      grid-template-rows: 5rem 90vh min-content min-content 40vw repeat(3, min-content); } }

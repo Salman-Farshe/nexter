@@ -28,4 +28,10 @@
                             repeat(8, [col-start] minmax(min-content, 9rem) [col-end] ) 
                             [center-end] minmax(4rem, 1fr) [full-end];
     }
+
+    @include responsive(custom800){
+        // add a new row
+        // delete the first column
+        grid-template-rows: 5rem 90vh min-content min-content 40vw repeat(3, min-content);
+    }
 }

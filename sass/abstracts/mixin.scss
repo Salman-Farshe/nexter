@@ -17,6 +17,8 @@ big desktop 1800px
     900px = 56.25em
     1200px = 75em
     1800px = 112.5em
+
+    800px = 50em
 */
 
 @mixin responsive($breakpoint) {
@@ -37,6 +39,12 @@ big desktop 1800px
     }
     @if($breakpoint == phone){
         @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == custom800) {
+        @media (max-width: 50em){
             @content;
         }
     }
