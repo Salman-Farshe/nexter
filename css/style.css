@@ -126,6 +126,11 @@ body {
   grid-row: 1 / -1;
   display: flex;
   justify-content: center; }
+  @media (max-width: 56.25em) {
+    .sidebar {
+      grid-column: full-start / full-end;
+      grid-row: 1 / 2;
+      justify-content: end; } }
 
 .nav__button {
   border: none;
@@ -147,6 +152,9 @@ body {
     transform: translateY(-0.5rem); }
   .nav__button::after {
     transform: translateY(0.4rem); }
+  @media (max-width: 56.25em) {
+    .nav__button {
+      margin-right: 2rem; } }
 
 .footer {
   background-color: #101d2c;
@@ -414,3 +422,7 @@ body {
         min-content - fit the content without overflow
         max-content - make the columns wide as much as possible, without line break
     */ }
+  @media (max-width: 56.25em) {
+    .container {
+      grid-template-rows: 5rem 85vh min-content 40vw repeat(3, min-content);
+      grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 9rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end]; } }

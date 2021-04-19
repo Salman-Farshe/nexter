@@ -19,4 +19,13 @@
         min-content - fit the content without overflow
         max-content - make the columns wide as much as possible, without line break
     */
+
+    @include responsive(tab__portait){
+        // add a new row
+        // delete the first column
+        grid-template-rows: 5rem 85vh min-content 40vw repeat(3, min-content);
+        grid-template-columns:[full-start] minmax(4rem, 1fr) [center-start] 
+                            repeat(8, [col-start] minmax(min-content, 9rem) [col-end] ) 
+                            [center-end] minmax(4rem, 1fr) [full-end];
+    }
 }
