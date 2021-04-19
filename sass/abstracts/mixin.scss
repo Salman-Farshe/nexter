@@ -1,0 +1,43 @@
+/*
+media queries manager 
+
+$breakpoint argumants: 
+
+mobile 600px
+tablet 900px
+tablet landscape 1200px 
+desktop 1200+px
+big desktop 1800px
+
+*/
+
+/*
+    1rem / 1em = 16px
+    600px = 37.5em
+    900px = 56.25em
+    1200px = 75em
+    1800px = 112.5em
+*/
+
+@mixin responsive($breakpoint) {
+    @if($breakpoint == big){
+        @media (min-width: 112.5em) {
+            @content;
+        }
+    }
+    @if($breakpoint == tab__landscape){
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+    @if($breakpoint == tab__portait){
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+    @if($breakpoint == phone){
+        @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+}
