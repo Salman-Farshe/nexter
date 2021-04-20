@@ -32,6 +32,7 @@
     @include responsive(custom800){
         // add a new row
         // delete the first column
-        grid-template-rows: 5rem 90vh min-content min-content 40vw repeat(3, min-content);
+        //grid-template-rows: 5rem 90vh min-content min-content 40vw repeat(3, min-content);
+        grid-template-rows: 5rem 90vh repeat(7, min-content);
     }
 }

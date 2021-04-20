@@ -274,6 +274,9 @@ body {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
   align-items: center; }
+  @media (max-width: 50em) {
+    .story__picture {
+      grid-column: full-start / full-end; } }
   .story__picture-1 {
     width: 100%;
     grid-row: 2 / 6;
@@ -296,6 +299,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; }
+  @media (max-width: 50em) {
+    .story__content {
+      grid-column: full-start / full-end; } }
 
 .story__heading-1 {
   font-size: 1.5rem;
@@ -441,4 +447,4 @@ body {
       grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 9rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end]; } }
   @media (max-width: 50em) {
     .container {
-      grid-template-rows: 5rem 90vh min-content min-content 40vw repeat(3, min-content); } }
+      grid-template-rows: 5rem 90vh repeat(7, min-content); } }

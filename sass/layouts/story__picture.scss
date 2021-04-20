@@ -9,6 +9,10 @@
 
     align-items: center;
 
+    @include responsive(custom800){
+        grid-column: full-start / full-end;
+    }
+
     // picture 01
     &-1{
         width: 100%;
